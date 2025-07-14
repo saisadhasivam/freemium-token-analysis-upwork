@@ -57,15 +57,31 @@ This project follows a full data lifecycle:
 
 ---
 
-## 📂 Project Structure (Planned)
+## Project Structure (Planned)
 
+```plaintext
 freemium-token-analysis-upwork/
 │
-├── data/ # CSVs: simulation, pricing, income
-├── notebooks/ # EDA, modeling, affordability notebooks
-├── reports/ # Graphs, final PDF report
-├── strategy/ # Notes, pricing tables, UX ideas
-└── README.md # Project overview 
+├── data/                # Real & simulated data (CSV)
+│   ├── pricing.csv
+│   ├── income.csv
+│   └── user_behavior_simulated.csv
+│
+├── notebooks/           # Jupyter notebooks for EDA, modeling
+│   ├── 01_eda.ipynb
+│   ├── 02_churn_modeling.ipynb
+│   └── 03_affordability_analysis.ipynb
+│
+├── strategy/            # Notes, UX suggestions, pricing models
+│   ├── pricing_comparison.xlsx
+│   └── recommendations.md
+│
+├── reports/             # Visualizations, graphs, PDF report
+│   ├── charts/
+│   └── freemium_model_analysis.pdf
+│
+└── README.md            # Project overview
+
 
 ---
 
