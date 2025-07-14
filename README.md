@@ -1,63 +1,49 @@
-# The Credit Dilemma: Evaluating Token-Based Freemium Models in Platforms like Upwork
+# Freemium Token Model Analysis: Are Global Platforms Affordable?
 
-## Business Problem
-
-Freemium platforms like **Upwork** offer limited usage through free credits or tokens (called "Connects") that users must spend to apply for projects. While this model helps monetize high-intent users, it may unintentionally push away users in emerging markets due to:
-
-- Token exhaustion without results
-- Low affordability of paid plans
-- Drop in daily active users (DAU)
-- Frustration among early users who never convert
-
-This raises a critical question:
-> Does the token-based freemium model drive sustainable global user growth, or does it lead to silent user churn?
+This project analyzes the effectiveness and fairness of token-based freemium models (like Upwork, Lovable, etc.) that give limited free credits to users.  
+We evaluate whether these models encourage daily active usage or unintentionally cause drop-offs — especially for users from low-income regions.
 
 ---
 
-## Project Objective
+## Problem Statement
 
-To perform an end-to-end, data-driven evaluation of token-based freemium models — with **Upwork, Lovable, and Figma** as references — using real-world pricing and simulated behavioral data.
+Platforms like **Upwork** and **Lovable** use a **freemium + credit/token model**:
 
-We will simulate user behavior, measure churn, analyze affordability across five countries, and offer business recommendations.
+- New users get **limited free tokens** (e.g., connections or interactions)
+- Once exhausted, users must **pay to continue** using core features
 
----
+Many users, especially from developing countries, sign up but drop off after hitting these limits.
 
-## Key Questions We Will Answer
-
-1. How does token usage affect user churn and upgrade behavior?
-2. Are users from different countries equally likely to upgrade, or are some priced out?
-3. Does limiting user activity through tokens lower DAU over time?
-4. Is the pricing model globally affordable compared to local incomes?
-5. What strategies can improve retention and conversions without hurting access?
+> **Key question:**  
+Is this model *affordable* and *sustainable* across different income regions?
 
 ---
 
-## Target Users of This Research
+## Project Objectives
 
-- Product managers of freemium apps
-- Startup founders launching credit-based services
-- Data analysts studying growth vs. monetization tradeoffs
-- Anyone trying to make access fair across geographies
-
----
-
-## Project Lifecycle Approach
-
-This project follows a full data lifecycle:
-
-| Phase | Step |
-|-------|------|
-| 1️⃣ Business Understanding | Define the user and business problem clearly |
-| 2️⃣ Data Collection | Real pricing + incomes + simulated behavior |
-| 3️⃣ Data Cleaning | Format, merge, enrich |
-| 4️⃣ EDA | Explore user journeys, churn triggers, DAU trends |
-| 5️⃣ Modeling | Predict churn/upgrade likelihood |
-| 6️⃣ Strategy | Recommend pricing or credit changes |
-| 7️⃣ Reporting | Visual insights, GitHub, PDF, Notion, LinkedIn post |
+1. Analyze **token pricing & usage rules** of global platforms  
+2. Collect **real-world income & cost-of-living data** per country  
+3. Simulate **user behavior** (free use, upgrade, churn)  
+4. Build an **Affordability Index**: can users afford to stay?  
+5. Generate **recommendations** for global freemium pricing  
 
 ---
 
-## Project Structure (Planned)
+## Data Lifecycle
+
+We follow a 7-step data science lifecycle:
+
+1. **Business Understanding** – Define the problem and hypotheses  
+2. **Data Collection** – Real-world token pricing + income stats  
+3. **Data Preparation** – Clean, transform, and integrate datasets  
+4. **EDA** – Visualize user flow, pricing pressure, and country-wise costs  
+5. **Modeling** – Simulate churn and engagement patterns  
+6. **Evaluation** – Check fairness and friction across regions  
+7. **Deployment** – Generate PDF report + publish case study  
+
+---
+
+## Project Structure
 
 ```plaintext
 freemium-token-analysis-upwork/
@@ -82,31 +68,55 @@ freemium-token-analysis-upwork/
 │
 └── README.md            # Project overview
 
+---
+
+## 🌍 Data Sources
+
+| Dataset       | Description                               | Type       | Source/Status       |
+|---------------|-------------------------------------------|------------|---------------------|
+| `pricing.csv` | Token models and pricing from real apps   | Real       | Manually compiled   |
+| `income.csv`  | Country-wise income and cost of living    | Real       | Numbeo, World Bank  |
+| `user_behavior_simulated.csv` | Simulated free vs. paid user behavior | Simulated | Built in Python      |
 
 ---
 
-## 🛠 Tools We Will Use
+## 🧰 Tools We Will Use
 
-- **Python** (pandas, matplotlib, seaborn, sklearn)
-- **Excel or Google Sheets** (pricing & income matrix)
-- **Notion** (to plan and document reasoning)
-- **GitHub** (to publish code + report)
-- **LinkedIn** (for final case study post)
-
----
-
-## 🧾 Data Ethics & Assumptions
-
-- This project uses dummy user behavior data to simulate patterns.
-- Income data and pricing are sourced from official/statistical sources where possible.
-- We assume Upwork's model as a base example and do not claim insider access or proprietary metrics.
+- **Python**: pandas, seaborn, matplotlib, sklearn  
+- **Jupyter Notebook**: for EDA, modeling, and simulation  
+- **Excel / Google Sheets**: for manual entry and pricing matrices  
+- **GitHub**: to version control and publish our project  
+- **Notion**: to document hypotheses and ideas  
+- **LinkedIn**: to publish the final case study for professional exposure
 
 ---
 
-## 📣 Why This Project Matters
+## Data Ethics & Assumptions
 
-Millions of users from developing countries sign up for global platforms — but are they being retained?  
-This project goes beyond basic dashboards. It digs into **real economic friction**, shows **data-backed user behavior**, and offers **business recommendations** that are globally conscious.
+- This project uses simulated and publicly available data.
+- We do not represent or misuse any internal company data.
+- Token models are inferred based on user experience and publicly visible pricing.
+- Simulated behaviors are designed for analytical purposes only.
 
 ---
 
+## Why This Project Matters
+
+Freemium token-based pricing is common in SaaS, freelancer platforms, and AI tools.  
+But many users in developing countries experience friction — they run out of credits quickly and can't afford subscriptions.  
+
+> **We aim to answer:**  
+> Are these platforms globally inclusive or accidentally exclusive?
+
+By combining real-world income data, platform pricing, and simulated usage patterns, this project provides insights that go beyond dashboards.  
+We recommend business strategies that balance monetization with accessibility.
+
+---
+
+## Status
+
+-  **Phase 1: Project Setup** – Completed  
+-  **Phase 2: Data Collection** – Ongoing  
+-  **Phase 3: EDA & Affordability Analysis**  
+-  **Phase 4: User Behavior Simulation & Churn Modeling**  
+-  **Phase 5: Reporting, Recommendations, and LinkedIn Case Study**
