@@ -41,36 +41,10 @@ We follow a 7-step data science lifecycle:
 6. **Evaluation** – Check fairness and friction across regions  
 7. **Deployment** – Generate PDF report + publish case study  
 
----
-
-## Project Structure
-
-```plaintext
-freemium-token-analysis-upwork/
-│
-├── data/                # Real & simulated data (CSV)
-│   ├── pricing.csv
-│   ├── income.csv
-│   └── user_behavior_simulated.csv
-│
-├── notebooks/           # Jupyter notebooks for EDA, modeling
-│   ├── 01_eda.ipynb
-│   ├── 02_churn_modeling.ipynb
-│   └── 03_affordability_analysis.ipynb
-│
-├── strategy/            # Notes, UX suggestions, pricing models
-│   ├── pricing_comparison.xlsx
-│   └── recommendations.md
-│
-├── reports/             # Visualizations, graphs, PDF report
-│   ├── charts/
-│   └── freemium_model_analysis.pdf
-│
-└── README.md            # Project overview
 
 ---
 
-## 🌍 Data Sources
+##  Data Sources
 
 | Dataset       | Description                               | Type       | Source/Status       |
 |---------------|-------------------------------------------|------------|---------------------|
@@ -120,3 +94,5 @@ We recommend business strategies that balance monetization with accessibility.
 -  **Phase 3: EDA & Affordability Analysis**  
 -  **Phase 4: User Behavior Simulation & Churn Modeling**  
 -  **Phase 5: Reporting, Recommendations, and LinkedIn Case Study**
+
+
