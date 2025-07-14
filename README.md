@@ -1,3 +1,5 @@
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python&logoColor=white)
+
 # Freemium Token Model Analysis: Are Global Platforms Affordable?
 
 This project analyzes the effectiveness and fairness of token-based freemium models (like Upwork, Lovable, etc.) that give limited free credits to users.  
